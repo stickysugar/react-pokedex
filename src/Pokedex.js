@@ -12,9 +12,9 @@ const DEFAULT_POKE =
     { id: 94, name: 'Gengar', type: 'poison', base_experience: 225 },
     { id: 133, name: 'Eevee', type: 'normal', base_experience: 65 }
   ];
-function Pokedex({ pokemons = DEFAULT_POKE }) {
+function Pokedex({ pokemons = DEFAULT_POKE, experience }) {
   return (
-    <ul className="Pokedex-container">
+    <div>  <ul className="Pokedex-container">
 
       {pokemons.map(p =>
         <li> <Pokecard
@@ -25,7 +25,11 @@ function Pokedex({ pokemons = DEFAULT_POKE }) {
         /> </li>)}
 
     </ul>
+      <h2>{experience}</h2>
+    </div>
+
   );
 }
 
 export default Pokedex;
+export { DEFAULT_POKE };

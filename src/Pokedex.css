@@ -4,8 +4,8 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 2rem;
-
-    margin: 0 auto;
-    padding-top: 4rem;
+    margin: 0, 2rem auto auto;
+    padding: 1rem 4rem;
+    background-color: rgb(251, 198, 133);
 
 }
